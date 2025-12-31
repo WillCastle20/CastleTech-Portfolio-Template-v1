@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Template v1</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Portfolio Template v1</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="kicker">STUDENT / DEVELOPER / BUILDER</div>
+
+          <h1 class="hero-title">
+            Hi, I’m <span class="accent">[Full Name]</span>.
+          </h1>
+
+          <p class="hero-lead">
+            I build clean, responsive websites and beginner-friendly projects while learning software development.
+          </p>
+
+          <p class="value-line">
+            Fast, clean websites for students, creators, and small businesses.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn btn-accent btn-lg" href="#projects">View Projects</a>
+            <a class="btn btn-ghost btn-lg" href="#contact">Contact</a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="badge-soft">✅ Mobile-first</span>
+            <span class="badge-soft">✅ Fast & clean</span>
+            <span class="badge-soft">✅ Easy to customize</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="glass-card strong p-4">
+            <h5 class="card-title mb-2">Quick Highlights</h5>
+            <div class="hr-soft"></div>
+            <ul class="mb-0 quick-list">
+              <li><strong>Major:</strong> Software Development</li>
+              <li><strong>Focus:</strong> Web + Automation</li>
+              <li><strong>Tools:</strong> GitHub, APIs, VS Code, Bootstrap</li>
+              <li><strong>Open to:</strong> Freelance + internships</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
+        <div>
+          <h2 class="section-title">Projects</h2>
+          <div class="section-subtitle">A few things I’ve built (swap these out anytime).</div>
+        </div>
+        <a class="btn btn-ghost" href="#contact">Work with me →</a>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">
+              A responsive personal site showcasing skills, projects, and contact info.
+            </p>
+            <div class="mb-3">
+              <span class="badge-soft">HTML</span>
+              <span class="badge-soft">CSS</span>
+              <span class="badge-soft">Bootstrap</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-ghost" href="https://YOUR-LIVE-LINK.com" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Business Website Demo</h5>
+            <p class="card-text">
+              A clean “small business” layout (services, testimonials, CTA) built for quick client launches.
+            </p>
+            <div class="mb-3">
+              <span class="badge-soft">Responsive</span>
+              <span class="badge-soft">Landing Page</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-ghost" href="#" onclick="alert('Add a preview link later!')">Preview</a>
+              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (optional extra, keep or delete) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Automation Mini Project</h5>
+            <p class="card-text">
+              Simple workflow idea (forms → email/Sheet) using n8n or Zapier.
+            </p>
+            <div class="mb-3">
+              <span class="badge-soft">n8n</span>
+              <span class="badge-soft">APIs</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-ghost" href="#" onclick="alert('Add notes/doc link later!')">Notes</a>
+              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-subtitle">Core tools and concepts I’m building with.</div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Languages</h5>
+            <p class="card-text mb-0">HTML, CSS, JavaScript, Python</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Tools</h5>
+            <p class="card-text mb-0">Git/GitHub, APIs, VS Code, Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Concepts</h5>
+            <p class="card-text mb-0">OOP, debugging, responsive design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-subtitle">Want to work together? Send a message.</div>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="glass-card p-4">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Name</label>
+                  <input class="form-control" type="text" placeholder="Your name" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input class="form-control" type="email" placeholder="you@example.com" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="5" placeholder="What are you building?"></textarea>
+                </div>
+
+                <div class="col-12 d-flex flex-wrap gap-2">
+                  <button class="btn btn-accent btn-lg" type="button"
+                    onclick="window.location.href='mailto:YOUR_EMAIL@example.com?subject=Website%20Inquiry&body=Hi%20-%20I%20saw%20your%20portfolio%20and%20wanted%20to%20talk%20about%20a%20site.'">
+                    Email Me
+                  </button>
+
+                  <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">
+                    LinkedIn
+                  </a>
+                </div>
+
+                <div class="small-note">
+                  (We can connect this to a real form handler later — Netlify Forms or Formspree.)
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="glass-card p-4 h-100">
+            <h5 class="card-title">Links</h5>
+            <div class="hr-soft"></div>
+
+            <div class="d-grid gap-2">
+              <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn btn-ghost btn-lg" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-ghost btn-lg" href="https://YOUR-PORTFOLIO.com" target="_blank" rel="noreferrer">Portfolio</a>
+            </div>
+
+            <p class="mt-3 mb-0 small-note">
+              Tip: You’ll reuse this template for clients by swapping the text, colors, and project cards.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <div>© 2025 Portfolio Template v1</div>
+      <div>Built with Bootstrap</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: mark active nav link on scroll (simple) -->
+  <script>
+    const links = document.querySelectorAll('.nav-link');
+    const sections = ['projects','skills','contact'].map(id => document.getElementById(id));
+
+    const setActive = () => {
+      let current = 'projects';
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top <= 140) current = sec.id;
+      });
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    };
+
+    document.addEventListener('scroll', setActive);
+    setActive();
+  </script>
+</body>
+</html>
