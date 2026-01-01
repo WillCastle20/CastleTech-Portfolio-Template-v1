@@ -3,181 +3,284 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Template v1</title>
+  <title>CastleTech — Template v1</title>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
   <!-- Your CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#top">Portfolio Template v1</a>
+  <!--
+  ==========================================================
+  CLIENT VARIABLES (EDIT THESE FOR EACH NEW CLIENT)
+  ==========================================================
+  Client/Brand Name:      William Castellanos
+  Business Name:          CastleTech
+  Tagline:                Fast, clean websites for students, creators, and small businesses.
+  Primary CTA Text:       Work with me
+  Primary CTA Link:       #contact
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+  Email:                  williamcastellanos.growth@gmail.com
+  Phone (optional):       857-205-6889
+  Location (optional):    Phoenix, AZ
+
+  LinkedIn:               https://www.linkedin.com/in/william-castellanos-ii-7a1a67255/
+  GitHub:                 https://github.com/WillCastle20
+  Portfolio/Home:         https://willcastle20.github.io/CastleTech-Portfolio-Template-v1/
+  Fiverr (optional):      https://www.fiverr.com/s/99ZVoV0
+
+  Services:
+    1) Web Design
+    2) Updates & Maintenance
+    3) Automation Dashboards
+  ==========================================================
+  -->
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-glass">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">CastleTech Template v1</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link nav-link-strong" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-strong" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-strong" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-strong" href="#contact">Contact</a>
+          </li>
         </ul>
+
+        <div class="d-lg-flex ms-lg-3 mt-3 mt-lg-0">
+          <!-- Optional CTA button (use for Fiverr or “Work with me”) -->
+          <a class="btn btn-cta btn-sm" href="#contact">Work with me</a>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header id="top" class="hero">
+  <header id="top" class="section hero-section">
     <div class="container">
-      <div class="row g-4 align-items-center">
+      <div class="row align-items-center g-4">
         <div class="col-lg-7">
-          <div class="kicker">STUDENT / DEVELOPER / BUILDER</div>
+          <div class="eyebrow">STUDENT / DEVELOPER / BUILDER</div>
 
-          <h1 class="hero-title">
-            Hi, I’m <span class="accent">[Full Name]</span>.
+          <h1 class="display-4 fw-bold mb-3">
+            Hi, I’m <span class="accent">William Castellanos</span>.
           </h1>
 
-          <p class="hero-lead">
+          <p class="lead text-soft mb-3">
             I build clean, responsive websites and beginner-friendly projects while learning software development.
           </p>
 
-          <p class="value-line">
+          <p class="tagline mb-4">
             Fast, clean websites for students, creators, and small businesses.
           </p>
 
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a class="btn btn-accent btn-lg" href="#projects">View Projects</a>
-            <a class="btn btn-ghost btn-lg" href="#contact">Contact</a>
-            <a class="btn btn-ghost btn-lg" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary btn-lg" href="#projects">View Projects</a>
+            <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/WillCastle20" target="_blank" rel="noopener">GitHub</a>
           </div>
 
-          <div class="d-flex flex-wrap gap-2 mt-4">
-            <span class="badge-soft">✅ Mobile-first</span>
-            <span class="badge-soft">✅ Fast & clean</span>
-            <span class="badge-soft">✅ Easy to customize</span>
+          <div class="mt-4 d-flex flex-wrap gap-2">
+            <span class="pill">✅ Mobile-first</span>
+            <span class="pill">✅ Fast & clean</span>
+            <span class="pill">✅ Easy to customize</span>
           </div>
         </div>
 
         <div class="col-lg-5">
-          <div class="glass-card strong p-4">
-            <h5 class="card-title mb-2">Quick Highlights</h5>
-            <div class="hr-soft"></div>
-            <ul class="mb-0 quick-list">
-              <li><strong>Major:</strong> Software Development</li>
-              <li><strong>Focus:</strong> Web + Automation</li>
-              <li><strong>Tools:</strong> GitHub, APIs, VS Code, Bootstrap</li>
-              <li><strong>Open to:</strong> Freelance + internships</li>
+          <div class="card-glass p-4">
+            <h2 class="h4 fw-bold mb-3">Quick Highlights</h2>
+            <hr class="divider" />
+
+            <ul class="list-unstyled mb-0 highlight-list">
+              <li><span class="label">Major:</span> <span class="value">Software Development</span></li>
+              <li><span class="label">Focus:</span> <span class="value">Web + Automation</span></li>
+              <li><span class="label">Tools:</span> <span class="value">GitHub, VS Code, APIs, Bootstrap</span></li>
+              <li><span class="label">Open to:</span> <span class="value">Freelance + internships</span></li>
             </ul>
           </div>
         </div>
-
       </div>
+
+      <div class="hero-fade"></div>
     </div>
   </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">What I can build for you (swap these anytime).</p>
+        </div>
+        <a class="btn btn-outline-light btn-sm" href="#contact">Get a quote →</a>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Web Design</h3>
+            <p class="text-soft mb-3">Responsive landing pages and multi-page sites with clean layout and modern styling.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="chip">Bootstrap</span>
+              <span class="chip">Responsive</span>
+              <span class="chip">SEO-ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Updates & Maintenance</h3>
+            <p class="text-soft mb-3">Ongoing edits, content updates, bug fixes, and basic performance improvements.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="chip">Monthly</span>
+              <span class="chip">Fast edits</span>
+              <span class="chip">Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Automation Dashboards</h3>
+            <p class="text-soft mb-3">Simple workflow automations (forms → email/Sheet/CRM) and basic dashboards.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="chip">n8n</span>
+              <span class="chip">APIs</span>
+              <span class="chip">Zapier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="container">
-      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
+      <div class="section-header d-flex align-items-end justify-content-between gap-3 flex-wrap">
         <div>
           <h2 class="section-title">Projects</h2>
-          <div class="section-subtitle">A few things I’ve built (swap these out anytime).</div>
+          <p class="section-subtitle">A few things I’ve built (swap these out anytime).</p>
         </div>
-        <a class="btn btn-ghost" href="#contact">Work with me →</a>
+        <a class="btn btn-cta btn-sm" href="#contact">Work with me →</a>
       </div>
 
-      <div class="row g-4 mt-1">
-        <!-- Card 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Portfolio Website</h5>
-            <p class="card-text">
-              A responsive personal site showcasing skills, projects, and contact info.
-            </p>
-            <div class="mb-3">
-              <span class="badge-soft">HTML</span>
-              <span class="badge-soft">CSS</span>
-              <span class="badge-soft">Bootstrap</span>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Portfolio Website</h3>
+            <p class="text-soft mb-3">A responsive personal site showcasing skills, projects, and contact info.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">Bootstrap</span>
             </div>
+
             <div class="d-flex gap-2">
-              <a class="btn btn-ghost" href="https://YOUR-LIVE-LINK.com" target="_blank" rel="noreferrer">Live</a>
-              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noreferrer">Code</a>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn btn-outline-light btn-sm" href="https://github.com/WillCastle20" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Business Website Demo</h5>
-            <p class="card-text">
-              A clean “small business” layout (services, testimonials, CTA) built for quick client launches.
-            </p>
-            <div class="mb-3">
-              <span class="badge-soft">Responsive</span>
-              <span class="badge-soft">Landing Page</span>
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Business Website Demo</h3>
+            <p class="text-soft mb-3">A clean “small business” layout (services, CTA) built for quick launches.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="chip">Responsive</span>
+              <span class="chip">Landing Page</span>
+              <span class="chip">CTA</span>
             </div>
+
             <div class="d-flex gap-2">
-              <a class="btn btn-ghost" href="#" onclick="alert('Add a preview link later!')">Preview</a>
-              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">Code</a>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank" rel="noopener">Preview</a>
+              <a class="btn btn-outline-light btn-sm" href="https://github.com/WillCastle20" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 (optional extra, keep or delete) -->
-        <div class="col-md-6 col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Automation Mini Project</h5>
-            <p class="card-text">
-              Simple workflow idea (forms → email/Sheet) using n8n or Zapier.
-            </p>
-            <div class="mb-3">
-              <span class="badge-soft">n8n</span>
-              <span class="badge-soft">APIs</span>
+        <div class="col-md-4">
+          <div class="card-glass h-100 p-4">
+            <h3 class="h5 fw-bold mb-2">Automation Mini Project</h3>
+            <p class="text-soft mb-3">Simple workflow idea (forms → email/Sheet) using n8n or Zapier.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="chip">n8n</span>
+              <span class="chip">APIs</span>
+              <span class="chip">Forms</span>
             </div>
+
             <div class="d-flex gap-2">
-              <a class="btn btn-ghost" href="#" onclick="alert('Add notes/doc link later!')">Notes</a>
-              <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">Code</a>
+              <a class="btn btn-outline-light btn-sm" href="#" target="_blank" rel="noopener">Notes</a>
+              <a class="btn btn-outline-light btn-sm" href="https://github.com/WillCastle20" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="section-subtitle">Core tools and concepts I’m building with.</div>
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Core tools and concepts I’m building with.</p>
+      </div>
 
-      <div class="row g-4 mt-1">
-        <div class="col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Languages</h5>
-            <p class="card-text mb-0">HTML, CSS, JavaScript, Python</p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card-glass p-4 h-100">
+            <h3 class="h5 fw-bold mb-2">Languages</h3>
+            <p class="text-soft mb-0">HTML, CSS, JavaScript, Python</p>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Tools</h5>
-            <p class="card-text mb-0">Git/GitHub, APIs, VS Code, Bootstrap</p>
+        <div class="col-md-4">
+          <div class="card-glass p-4 h-100">
+            <h3 class="h5 fw-bold mb-2">Tools</h3>
+            <p class="text-soft mb-0">Git/GitHub, APIs, VS Code, Bootstrap</p>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Concepts</h5>
-            <p class="card-text mb-0">OOP, debugging, responsive design</p>
+        <div class="col-md-4">
+          <div class="card-glass p-4 h-100">
+            <h3 class="h5 fw-bold mb-2">Concepts</h3>
+            <p class="text-soft mb-0">OOP, debugging, responsive design</p>
           </div>
         </div>
       </div>
@@ -187,94 +290,95 @@
   <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="section-subtitle">Want to work together? Send a message.</div>
+      <div class="section-header d-flex align-items-end justify-content-between gap-3 flex-wrap">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Want to work together? Send a message.</p>
+        </div>
 
-      <div class="row g-4">
+        <!-- Optional Fiverr button -->
+        <a class="btn btn-outline-light btn-sm" href="https://www.fiverr.com/s/99ZVoV0" target="_blank" rel="noopener">
+          Hire me on Fiverr →
+        </a>
+      </div>
+
+      <div class="row g-3">
         <div class="col-lg-7">
-          <div class="glass-card p-4">
-            <form>
-              <div class="row g-3">
+          <div class="card-glass p-4">
+            <h3 class="h5 fw-bold mb-3">Send a quick message</h3>
+
+            <!-- OPTION A: simple mailto (always works) -->
+            <a
+              class="btn btn-primary w-100 mb-2"
+              href="mailto:williamcastellanos.growth@gmail.com?subject=Website%20Request&body=Hi%20William%2C%20I%27d%20like%20help%20with%20a%20website.%20Here%27s%20what%20I%20need%3A%20"
+            >
+              Email me
+            </a>
+
+            <!-- OPTIONAL form (static demo) -->
+            <form class="mt-3" onsubmit="return false;">
+              <div class="row g-2">
                 <div class="col-md-6">
-                  <label class="form-label">Name</label>
-                  <input class="form-control" type="text" placeholder="Your name" />
+                  <label class="form-label form-label-strong">Name</label>
+                  <input class="form-control form-control-dark" type="text" placeholder="Your name" />
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Email</label>
-                  <input class="form-control" type="email" placeholder="you@example.com" />
+                  <label class="form-label form-label-strong">Email</label>
+                  <input class="form-control form-control-dark" type="email" placeholder="you@example.com" />
                 </div>
                 <div class="col-12">
-                  <label class="form-label">Message</label>
-                  <textarea class="form-control" rows="5" placeholder="What are you building?"></textarea>
+                  <label class="form-label form-label-strong">Message</label>
+                  <textarea class="form-control form-control-dark" rows="5" placeholder="What are you building?"></textarea>
                 </div>
-
-                <div class="col-12 d-flex flex-wrap gap-2">
-                  <button class="btn btn-accent btn-lg" type="button"
-                    onclick="window.location.href='mailto:YOUR_EMAIL@example.com?subject=Website%20Inquiry&body=Hi%20-%20I%20saw%20your%20portfolio%20and%20wanted%20to%20talk%20about%20a%20site.'">
-                    Email Me
+                <div class="col-12">
+                  <button class="btn btn-outline-light w-100" type="button">
+                    Send Message
                   </button>
-
-                  <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">
-                    LinkedIn
-                  </a>
-                </div>
-
-                <div class="small-note">
-                  (We can connect this to a real form handler later — Netlify Forms or Formspree.)
                 </div>
               </div>
+
+              <p class="form-note mt-2 mb-0">
+                (Form wiring available on request — email button above works now.)
+              </p>
             </form>
           </div>
         </div>
 
         <div class="col-lg-5">
-          <div class="glass-card p-4 h-100">
-            <h5 class="card-title">Links</h5>
-            <div class="hr-soft"></div>
+          <div class="card-glass p-4 h-100">
+            <h3 class="h5 fw-bold mb-3">Links</h3>
 
             <div class="d-grid gap-2">
-              <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn btn-ghost btn-lg" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn btn-ghost btn-lg" href="https://YOUR-PORTFOLIO.com" target="_blank" rel="noreferrer">Portfolio</a>
+              <a class="btn btn-outline-light" href="https://www.linkedin.com/in/william-castellanos-ii-7a1a67255/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-outline-light" href="https://github.com/WillCastle20" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-outline-light" href="https://willcastle20.github.io/CastleTech-Portfolio-Template-v1/" target="_blank" rel="noopener">Portfolio</a>
             </div>
 
-            <p class="mt-3 mb-0 small-note">
-              Tip: You’ll reuse this template for clients by swapping the text, colors, and project cards.
+            <div class="mt-4 text-soft small">
+              <p class="mb-2"><span class="label">Email:</span> williamcastellanos.growth@gmail.com</p>
+              <p class="mb-2"><span class="label">Phone:</span> 857-205-6889</p>
+              <p class="mb-0"><span class="label">Location:</span> Phoenix, AZ</p>
+            </div>
+
+            <p class="tip mt-4 mb-0">
+              Tip: Reuse this template for clients by swapping the Client Variables at the top.
             </p>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container d-flex justify-content-between flex-wrap gap-2">
-      <div>© 2025 Portfolio Template v1</div>
-      <div>Built with Bootstrap</div>
+  <footer class="footer py-4">
+    <div class="container text-center text-soft small">
+      © 2026 CastleTech • Built with Bootstrap
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Optional: mark active nav link on scroll (simple) -->
-  <script>
-    const links = document.querySelectorAll('.nav-link');
-    const sections = ['projects','skills','contact'].map(id => document.getElementById(id));
-
-    const setActive = () => {
-      let current = 'projects';
-      sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top <= 140) current = sec.id;
-      });
-      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-    };
-
-    document.addEventListener('scroll', setActive);
-    setActive();
-  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
